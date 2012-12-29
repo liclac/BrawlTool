@@ -1,0 +1,46 @@
+<grid portraitPrefix="P_" portraitSuffix=".PNG">
+	<row>
+		<char name="Mario" portrait="Mario" />
+		<char name="Donkey Kong" portrait="DK" />
+		<char name="Link" portrait="Link" />
+		<char name="Samus" portrait="Samus" />
+		<char name="Kirby" portrait="Kirby" />
+		<char name="Fox" portrait="Fox" />
+		<char name="Pikachu" portrait="Pikachu" />
+		<char name="Marth" portrait="Marth" />
+		<char name="Mr. Game &amp; Watch" portrait="MrGameAndWatch" />
+	</row>
+	<row>
+		<char name="Luigi" portrait="Luigi" />
+		<char name="Diddy Kong" portrait="Diddy" />
+		<char name="Zelda" portrait="Zelda" />
+		<char name="Pit" portrait="Pit" />
+		<char name="Meta Knight" portrait="MetaKnight" />
+		<char name="Falco" portrait="Falco" />
+		<char name="Pokémon Trainer" portrait="PokemonTrainer" />
+		<char name="Ike" portrait="Ike" />
+		<char name="Snake" portrait="Snake" />
+	</row>
+	<row>
+		<char name="Peach" portrait="Peach" />
+		<char name="Yoshi" portrait="Yoshi" />
+		<char name="Ganondorf" portrait="Ganondorf" />
+		<char name="Ice Climbers" portrait="IceClimbers" />
+		<char name="King Dedede" portrait="DeDeDe" />
+		<char name="Wolf" portrait="Wolf" />
+		<char name="Lucario" portrait="Lucario" />
+		<char name="Ness" portrait="Ness" />
+		<char name="Sonic" portrait="Sonic" />
+	</row>
+	<row>
+		<char name="Bowser" portrait="Bowser" />
+		<char name="Wario" portrait="Wario" />
+		<char name="Toon Link" portrait="ToonLink" />
+		<char name="R.O.B" portrait="ROB" />
+		<char name="Olimar" portrait="Olimar" />
+		<char name="Captain Falcon" portrait="Falcon" />
+		<char name="Jigglypuff" portrait="Jigglypuff" />
+		<char name="Lucas" portrait="Lucas" />
+		<spacer />
+	</row>
+</grid>

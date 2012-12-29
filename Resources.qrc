@@ -1,0 +1,49 @@
+<RCC>
+    <qresource prefix="/portraits">
+        <file>P_Bowser.PNG</file>
+        <file>P_Charizard.PNG</file>
+        <file>P_DeDeDe.PNG</file>
+        <file>P_Diddy.PNG</file>
+        <file>P_DK.PNG</file>
+        <file>P_Falco.PNG</file>
+        <file>P_Falcon.PNG</file>
+        <file>P_Fox.PNG</file>
+        <file>P_Ganondorf.PNG</file>
+        <file>P_IceClimbers.PNG</file>
+        <file>P_Ike.PNG</file>
+        <file>P_Ivysaur.PNG</file>
+        <file>P_Jigglypuff.PNG</file>
+        <file>P_Kirby.PNG</file>
+        <file>P_Link.PNG</file>
+        <file>P_Lucario.PNG</file>
+        <file>P_Lucas.PNG</file>
+        <file>P_Luigi.PNG</file>
+        <file>P_Mario.PNG</file>
+        <file>P_Marth.PNG</file>
+        <file>P_MetaKnight.PNG</file>
+        <file>P_MrGameAndWatch.PNG</file>
+        <file>P_Ness.PNG</file>
+        <file>P_Olimar.PNG</file>
+        <file>P_Peach.PNG</file>
+        <file>P_Pikachu.PNG</file>
+        <file>P_Pit.PNG</file>
+        <file>P_PokemonTrainer.PNG</file>
+        <file>P_ROB.PNG</file>
+        <file>P_Samus.PNG</file>
+        <file>P_Snake.PNG</file>
+        <file>P_Sonic.PNG</file>
+        <file>P_Squirtle.PNG</file>
+        <file>P_ToonLink.PNG</file>
+        <file>P_Wario.PNG</file>
+        <file>P_Wolf.PNG</file>
+        <file>P_Yoshi.PNG</file>
+        <file>P_Zelda.PNG</file>
+        <file>P_ZeroSuitSamus.PNG</file>
+    </qresource>
+    <qresource prefix="/grids">
+        <file>Grid_Brawl.xml</file>
+    </qresource>
+    <qresource prefix="/ui">
+        <file>dices.jpg</file>
+    </qresource>
+</RCC>
