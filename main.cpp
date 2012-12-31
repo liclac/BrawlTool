@@ -5,8 +5,9 @@
 int main(int argc, char *argv[])
 {
     QApplication a(argc, argv);
+	a.setOrganizationName("MacaroniCode");
 	a.setApplicationName("BrawlTool");
-	a.setApplicationVersion("1.1");
+	a.setApplicationVersion("1.2");
 	qsrand(time(NULL));
     MainWindow w;
     w.show();

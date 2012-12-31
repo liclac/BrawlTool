@@ -14,10 +14,15 @@ TEMPLATE = app
 
 SOURCES += main.cpp\
         MainWindow.cpp \
-    ClickableLabel.cpp
+    ClickableLabel.cpp \
+    Tools.cpp \
+    InvisibilityFilter.cpp
 
 HEADERS  += MainWindow.h \
-    ClickableLabel.h
+    ClickableLabel.h \
+    Macros.h \
+    Tools.h \
+    InvisibilityFilter.h
 
 FORMS    += MainWindow.ui
 

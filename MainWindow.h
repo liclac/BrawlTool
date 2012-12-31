@@ -6,6 +6,8 @@
 #include <QtXml>
 
 #include "ClickableLabel.h"
+#include "Tools.h"
+#include "InvisibilityFilter.h"
 
 namespace Ui {
 class MainWindow;
@@ -17,12 +19,13 @@ class MainWindow : public QMainWindow
 	
 	struct Character {
 		bool isSpacer;
-		int id;
+		int id;				//Yes, Spacers get IDs. Deal with it. As in, don't move them around too much.
 		QString name;
 		QString portrait;
 	};
 	
 	struct Grid {
+		QString path;
 		QString portraitPrefix, portraitSuffix, spacerPortrait;
 		QMap<int, Character> chars;
 		QList<QList<int> > rows;					//Values are Character.id values
@@ -31,6 +34,21 @@ class MainWindow : public QMainWindow
 	
 	struct Player {
 		QList<int> charsEnabled, charsPooled;		//Keys are Character.id values
+		int currentChar, _oldChar;
+		bool participating;
+		
+		//gah, I just want to memset this!
+		Player() :
+			currentChar(0),
+			_oldChar(-1),
+			participating(false)
+		{}
+	};
+	
+	enum ReuseRule {
+		ResetOne,
+		ResetAll,
+		AllowReuse
 	};
 	
 public:
@@ -38,8 +56,14 @@ public:
 	~MainWindow();
 	
 	void loadGrid(QString filename);
-	void resetGridTiles();									//Un-grays everything
-	void updateGridTiles(QList<int> charsEnabled);
+	
+private:
+	void initUI();
+	void updateGrid();
+	void updatePlayers();
+	void updatePlayer(int index);
+	void refillPools();
+	void refillPool(int index);
 	
 protected:
 	//-- UI
@@ -56,23 +80,24 @@ protected:
 	QSignalMapper changeMapper, selectMapper, checkMapper;
 	QSignalMapper gridMapper;
 	
+	InvisibilityFilter invisibilityFilter;
+	
 	//-- Data
 	Grid grid;
 	Player players[4];
 	int currentlyPickingPlayer;		//-1 = no one is picking
+	ReuseRule reuseRule;
 	
 private slots:
 	void onCharacterClicked(int index);
-	
-	//NOTE: These will be called with array indices, not player numbers
-	//so, Player 1 is 0, not 1
 	void onChangePlayer(int index);
 	void onSelectCharacters(int index);
 	void onChangeParticipaction(int index);
+	void onReuseRuleChanged();
 	
 	void on_rollButton_clicked();
-	
-	void onReuseRuleChanged();
+	void on_clearButton_clicked();
+	void on_resetNowButton_clicked();
 	
 private:
 	Ui::MainWindow *ui;
