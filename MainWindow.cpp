@@ -50,6 +50,7 @@ MainWindow::MainWindow(QWidget *parent) :
 	this->initUI();
 	this->updateGrid();
 	this->updatePlayers();
+	ui->rollButton->setFocus();
 }
 
 MainWindow::~MainWindow()
